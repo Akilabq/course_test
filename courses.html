@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.min.css">
+    <link rel="stylesheet" href="css/transformations.min.css">
+    <link rel="stylesheet" href="css/basic/boxicons.min.css">
+    <link rel="stylesheet" href="css/filled/boxicons-filled.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <aside class="sider">
+        <div class="menu">
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <img src="Assets/icons/logo.svg" alt="logo" class="logo">
+                <h1 class="logo-title">Learn Hub</h1>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="index.html"><i class="bx bx-dashboard"></i>Dashboard</a></li>
+                <li class="menu-item"><i class="bx bx-inbox"></i>Inbox</li>
+                <li class="menu-item"><i class="bx bx-book-alt"></i>Courses</li>
+                <li class="menu-item"><i class="bx bx-checklist"></i>Task</li>
+                <li class="menu-item"><i class="bx bx-group"></i>Group</li>
+            </ul>
+        </div>
+        <ul class="menu-list">
+            <li class="menu-item"><i class="bx bx-cog"></i>Settings</li>
+            <li class="menu-logout menu-item"><i class="bx bx-arrow-out-right-square-half"></i>Logout</li>
+        </ul>
+    </aside>
+
+    <div class="container-body">
+
+        <header>
+            <input type="search" placeholder="What do you want to learn?" class="search">
+            <div class="header-spacer">
+                <button class="header-btn" title="none"><i class="bx bx-search"> </i></button>
+                <button class="header-btn" title="none"><i class="bx bx-bell"> </i></button>
+            </div>
+            <div class="avatar-spacer">
+                <img src="Assets/images/avatar.jpg" alt="avatar" class="avatar">
+                <p>Jason Duello</p>
+            </div>
+        </header>
+
+        <div class="container-main">
+            <div class="main-wrapper">
+                <div class="space-between">
+                    <h3>All results</h3>
+                    <div class="spacer2">
+                        <button title="none" class="chevron"><i class="bx bx-chevron-left"></i></button>
+                        <button title="none" class="chevron"><i class="bx bx-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="main-grid">
+                     <div class="ad-card">
+                            <img src="./Assets/images/ui-ux1.jpg" alt="adimg" class="adimg">
+                            <span class="uiux-span"><i class="bx bx-feather"></i>ui/ux</span>
+                            <p class="text-14">Beginner’s Guide to Mastering UI/UX Design</p>
+                            <progress value="65" max="100"></progress>
+                            <div class="spacer6">
+                                <img src="Assets/images/woman1.jpg" alt="ava chen"
+                                    class="avatar25">
+                                <div style="display: flex; flex-direction: column;">
+                                    <p>Sofia Karim</p>
+                                    <p class="text-secondary">Design Instructor</p>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="ad-card">
+                            <img src="./Assets/images/ui-ux2.jpg" alt="adimg" class="adimg">
+                            <span class="uiux-span"><i class="bx bx-feather"></i>ui/ux</span>
+                            <p class="text-14">A Comprehensive Beginner’s Guide to UI/UX Design</p>
+                            <progress value="65" max="100"></progress>
+                            <div class="spacer6">
+                                <img src="Assets/images/woman1.jpg" alt="ava chen"
+                                    class="avatar25">
+                                <div style="display: flex; flex-direction: column;">
+                                    <p>Sofia Karim</p>
+                                    <p class="text-secondary">Design Instructor</p>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="ad-card">
+                            <img src="./Assets/images/ui-ux3.jpg" alt="adimg" class="adimg">
+                            <span class="uiux-span"><i class="bx bx-feather"></i>ui/ux</span>
+                            <p class="text-14">Build Consistent & Scalable Interfaces</p>
+                            <progress value="65" max="100"></progress>
+                            <div class="spacer6">
+                                <img src="Assets/images/woman1.jpg" alt="ava chen"
+                                    class="avatar25">
+                                <div style="display: flex; flex-direction: column;">
+                                    <p>Sofia Karim</p>
+                                    <p class="text-secondary">Design Instructor</p>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="ad-card">
+                            <img src="./Assets/images/ad1.jpg" alt="adimg" class="adimg">
+                            <span class="front-span"><i class="bx bx-shield-quarter"></i>front end</span>
+                            <p class="text-14">Beginner’s guide to become a Professional Front-end developer</p>
+                            <progress value="65" max="100"></progress>
+                            <div class="spacer6">
+                                <img src="Assets/images/man.jpg" alt="ava chen"
+                                    class="avatar25">
+                                <div style="display: flex; flex-direction: column;">
+                                    <p>Ava Chen</p>
+                                    <p class="text-secondary">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="ad-card">
+                            <img src="./Assets/images/ad2.jpg" alt="adimg" class="adimg">
+                            <span class="front-span"><i class="bx bx-shield-quarter"></i>front end</span>
+                            <p class="text-14">JavaScript Essentials for Aspiring Front-End Developers</p>
+                            <progress value="65" max="100"></progress>
+                            <div class="spacer6">
+                                <img src="Assets/images/man.jpg" alt="ava chen"
+                                    class="avatar25">
+                                <div style="display: flex; flex-direction: column;">
+                                    <p>Ava Chen</p>
+                                    <p class="text-secondary">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="ad-card">
+                            <img src="./Assets/images/ad3.jpg" alt="adimg" class="adimg">
+                            <span class="front-span"><i class="bx bx-shield-quarter"></i>front end</span>
+                            <p class="text-14">Responsive Web Design: From Basics to Best Practices</p>
+                            <progress value="65" max="100"></progress>
+                            <div class="spacer6">
+                                <img src="Assets/images/man.jpg" alt="ava chen"
+                                    class="avatar25">
+                                <div style="display: flex; flex-direction: column;">
+                                    <p>Ava Chen</p>
+                                    <p class="text-secondary">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="ad-card">
+                            <img src="./Assets/images/branding1.jpg" alt="adimg" class="adimg">
+                            <span class="branding-span"><i class="bx bx-ruler"></i>branding</span>
+                            <p class="text-14">Beginner’s guide to become a Professional Front-end developer</p>
+                            <progress value="65" max="100"></progress>
+                            <div class="spacer6">
+                                <img src="Assets/images/woman2.jpg" alt="ava chen"
+                                    class="avatar25">
+                                <div style="display: flex; flex-direction: column;">
+                                    <p>Isla Takeda</p>
+                                    <p class="text-secondary">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="ad-card">
+                            <img src="./Assets/images/branding2.jpg" alt="adimg" class="adimg">
+                            <span class="branding-span"><i class="bx bx-ruler"></i>branding</span>
+                            <p class="text-14">Beginner’s guide to become a Professional Front-end developer</p>
+                            <progress value="65" max="100"></progress>
+                            <div class="spacer6">
+                                <img src="Assets/images/woman2.jpg" alt="ava chen"
+                                    class="avatar25">
+                                <div style="display: flex; flex-direction: column;">
+                                    <p>Isla Takeda</p>
+                                    <p class="text-secondary">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="ad-card">
+                            <img src="./Assets/images/branding3.jpg" alt="adimg" class="adimg">
+                            <span class="branding-span"><i class="bx bx-ruler"></i>branding</span>
+                            <p class="text-14">Beginner’s guide to become a Professional Front-end developer</p>
+                            <progress value="65" max="100"></progress>
+                            <div class="spacer6">
+                                <img src="Assets/images/woman2.jpg" alt="ava chen"
+                                    class="avatar25">
+                                <div style="display: flex; flex-direction: column;">
+                                    <p>Isla Takeda</p>
+                                    <p class="text-secondary">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="sider-right">
+                <div class="space-between">
+                    <h3 class="sider-title">Filter by</h3>
+                    <button title="none" class="dots"><i class="bx bx-dots-vertical-rounded"></i></button>
+                </div>
+                <div class="sider-card">
+                    <h4>Quick Links</h4>
+                    <ul class="filter-list">
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Business</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">UI / UX Design</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Front End</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Data Science</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Computer Science</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <button class="filter-btn">Show 7 more</button>
+                </div>
+                <div class="sider-card">
+                    <h4>Subjects</h4>
+                    <ul class="filter-list">
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Business</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">UI / UX Design</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Front End</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Data Science</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Computer Science</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <button class="filter-btn">Show 7 more</button>
+                </div>
+                <div class="sider-card">
+                    <h4>Language</h4>
+                    <ul class="filter-list">
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Business</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">UI / UX Design</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Front End</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Data Science</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                        <li class="spacer6">
+                            <input type="checkbox" name="Business" title="none">
+                            <span class="spacer">
+                                <p class="text-size-16">Computer Science</p>
+                                <p class="text-secondary text-size-16">(3,804)</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <button class="filter-btn">Show 7 more</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="main.js"></script>
+</body>
+
+</html>

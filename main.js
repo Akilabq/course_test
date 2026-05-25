@@ -1,5 +1,5 @@
-
-let menuItems = document.querySelectorAll('li')
+let sider = document.querySelector('.sider')
+let menuItems = sider.querySelectorAll('li')
 
 menuItems.forEach((item) => {
     item.addEventListener('click', () => {
@@ -8,6 +8,11 @@ menuItems.forEach((item) => {
         })
         item.classList.add('menuItem-active')
     })
+})
+menuItems.forEach(item => {
+    if (item.querySelector('a')) {
+        item.classList.add('menuItem-active');
+    }
 })
 const circleChart = document.getElementById('doughnutChart').getContext('2d');
 

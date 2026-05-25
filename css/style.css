@@ -15,6 +15,14 @@ body {
     grid-template-columns: 256px 1fr;
 }
 
+a {
+    text-decoration: none;
+    color: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .logo-title {
     font-size: 30px;
     font-weight: 700;
@@ -376,6 +384,8 @@ button {
     width: 228px;
     height: 100px;
     border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .front-span {
@@ -529,7 +539,8 @@ progress::-webkit-progress-value {
     border-radius: 12px;
     padding: 14px;
 }
-.follow{
+
+.follow {
     width: 80px;
     height: 24px;
     border-radius: 7765.18px;
@@ -543,21 +554,97 @@ progress::-webkit-progress-value {
     justify-content: center;
     gap: 6px;
 }
-.flood-list{
+
+.flood-list {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
-.flood-list li{
+
+.flood-list li {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 6px;
 }
-.dots{
+
+.dots {
     border: none;
-    background: transparent; 
+    background: transparent;
 }
-.bx.bx-user-check{
+
+.bx.bx-user-check {
     font-size: 12.5px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    overflow: auto;
+}
+
+.uiux-span {
+    background-color: #F0F1FF;
+    padding: 2px 4px;
+    display: flex;
+    gap: 4px;
+    align-items: 4px;
+    border-radius: 9999px;
+    border: 1px solid rgba(110, 98, 229, 0.2);
+    color: #6E62E5;
+    max-width: fit-content;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+
+.branding-span {
+    background-color: #FEF0FF;
+    padding: 2px 4px;
+    display: flex;
+    gap: 4px;
+    align-items: 4px;
+    border-radius: 9999px;
+    border: 1px solid rgba(229, 98, 201, 0.23);
+    color: #E562C9;
+    max-width: fit-content;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+
+.text-size-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.filter-list {
+    list-style: none;
+    gap: 10px;
+}
+
+.spacer-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.sider-card{
+    background-color: #F0F1FF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 14px;
+}
+.filter-btn{
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 16px;
 }
