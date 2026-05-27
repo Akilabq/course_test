@@ -98,7 +98,7 @@ heroBtn.addEventListener('mouseenter', (e) => {
 heroBtn.addEventListener('mouseleave', (e) => {
     btnChevron.style.transform = 'rotate(0deg)'
 })
-let adCard = document.querySelectorAll('.ad-card')
+let adCard = document.querySelectorAll('.card')
 let adImg = document.querySelectorAll('.adimg')
 
 adCard.forEach(element => {

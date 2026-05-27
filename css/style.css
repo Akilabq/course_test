@@ -398,7 +398,7 @@ button {
     cursor: pointer;
 }
 
-.ad {
+section {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -416,7 +416,7 @@ button {
     gap: 6px;
 }
 
-.ad-card {
+.card {
     background-color: #F8F8FF;
     box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.704);
     border-radius: 16px;
