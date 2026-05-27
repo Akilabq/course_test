@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/animations.min.css">
     <link rel="stylesheet" href="css/transformations.min.css">
     <link rel="stylesheet" href="css/basic/boxicons.min.css">
@@ -18,18 +19,53 @@
 </head>
 
 <body>
-    <aside class="sider">
+    <aside class="sider animate__animated animate__fadeInLeft">
         <div class="menu">
             <div style="display: flex; justify-content: center; gap: 10px;">
                 <img src="Assets/icons/logo.svg" alt="logo" class="logo">
                 <h1 class="logo-title">Learn Hub</h1>
             </div>
             <ul class="menu-list">
-                <li class="menu-item"><i class="bx bx-dashboard"></i>Dashboard</li>
-                <li class="menu-item"><i class="bx bx-inbox"></i>Inbox</li>
-                <li class="menu-item"><a href="courses.html"><i class="bx bx-book-alt"></i>Courses</a></li>
-                <li class="menu-item"><i class="bx bx-checklist"></i>Task</li>
-                <li class="menu-item"><i class="bx bx-group"></i>Group</li>
+                <li>
+                    <a href="index.html">
+                        <div class="menu-item">
+                            <i class="bx bx-dashboard"></i>
+                            Dashboard
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu-item">
+                            <i class="bx bx-inbox"></i>
+                            Inbox
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <div class="menu-item">
+                            <i class="bx bx-book-alt"></i>
+                            Courses
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu-item">
+                            <i class="bx bx-checklist"></i>
+                            Task
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu-item">
+                            <i class="bx bx-group"></i>
+                            Group
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
         <ul class="menu-list">
@@ -38,7 +74,7 @@
         </ul>
     </aside>
 
-    <div class="container-body">
+    <div class="container-body animate__animated ">
 
         <header>
             <input type="search" placeholder="What do you want to learn?" class="search">
@@ -53,15 +89,15 @@
         </header>
 
         <div class="container-main">
-            <div class="main-wrapper">
+            <div class="main-wrapper animate__animated animate__fadeInDown">
                 <div class="hero-block">
                     <span class="hero-subtitle">online course</span>
                     <span class="hero-title">Sharpen Your Skills with Professional Online Courses</span>
                     <button class="hero-btn">Join Now <i class="bx bx-chevron-right chevron-right"></i></button>
-                    <img src="./Assets/icons/graduate-cap.svg" alt="graduate-cap" class="graduate-cap">
-                    <img src="./Assets/icons/graduate-cap.svg" alt="graduate-cap" class="graduate-cap1">
-                    <img src="./Assets/icons/graduate-cap.svg" alt="graduate-cap" class="graduate-cap2">
-                    <img src="./Assets/icons/graduate-cap.svg" alt="graduate-cap" class="graduate-cap3">
+                    <img src="./Assets/icons/graduate-cap.svg" alt="graduate-cap" class="graduate-cap  animate__animated animate__bounceInDown">
+                    <img src="./Assets/icons/graduate-cap.svg" alt="graduate-cap" class="graduate-cap1 animate__animated animate__bounceInUp">
+                    <img src="./Assets/icons/graduate-cap.svg" alt="graduate-cap" class="graduate-cap2 animate__animated animate__bounceInLeft">
+                    <img src="./Assets/icons/graduate-cap.svg" alt="graduate-cap" class="graduate-cap3 animate__animated animate__bounceInRight">
                 </div>
 
                 <div class="courses-cards">
@@ -103,13 +139,12 @@
 
                     <div class="spacer3">
                         <div class="ad-card">
-                            <img src="./Assets/images/ad1.jpg" alt="adimg" class="adimg">
+                            <div class="img-wrapper"><img src="./Assets/images/ad1.jpg" alt="adimg" class="adimg"></div>
                             <span class="front-span"><i class="bx bx-shield-quarter"></i>front end</span>
                             <p class="text-14">Beginner’s guide to become a Professional Front-end developer</p>
                             <progress value="65" max="100"></progress>
                             <div class="spacer6">
-                                <img src="Assets/images/man.jpg" alt="ava chen"
-                                    class="avatar25">
+                                <img src="Assets/images/man.jpg" alt="ava chen" class="avatar25">
                                 <div style="display: flex; flex-direction: column;">
                                     <p>Ava Chen</p>
                                     <p class="text-secondary">Professor</p>
@@ -117,13 +152,12 @@
                             </div>
                         </div>
                         <div class="ad-card">
-                            <img src="./Assets/images/ad2.jpg" alt="adimg" class="adimg">
+                            <div class="img-wrapper"><img src="./Assets/images/ad2.jpg" alt="adimg" class="adimg"></div>
                             <span class="front-span"><i class="bx bx-shield-quarter"></i>front end</span>
                             <p class="text-14">JavaScript Essentials for Aspiring Front-End Developers</p>
                             <progress value="65" max="100"></progress>
                             <div class="spacer6">
-                                <img src="Assets/images/man.jpg" alt="ava chen"
-                                    class="avatar25">
+                                <img src="Assets/images/man.jpg" alt="ava chen" class="avatar25">
                                 <div style="display: flex; flex-direction: column;">
                                     <p>Ava Chen</p>
                                     <p class="text-secondary">Professor</p>
@@ -131,13 +165,12 @@
                             </div>
                         </div>
                         <div class="ad-card">
-                            <img src="./Assets/images/ad3.jpg" alt="adimg" class="adimg">
+                            <div class="img-wrapper"><img src="./Assets/images/ad3.jpg" alt="adimg" class="adimg"></div>
                             <span class="front-span"><i class="bx bx-shield-quarter"></i>front end</span>
                             <p class="text-14">Responsive Web Design: From Basics to Best Practices</p>
                             <progress value="65" max="100"></progress>
                             <div class="spacer6">
-                                <img src="Assets/images/man.jpg" alt="ava chen"
-                                    class="avatar25">
+                                <img src="Assets/images/man.jpg" alt="ava chen" class="avatar25">
                                 <div style="display: flex; flex-direction: column;">
                                     <p>Ava Chen</p>
                                     <p class="text-secondary">Professor</p>
@@ -147,7 +180,7 @@
                 </section>
 
             </div>
-            <div class="sider-right">
+            <div class="sider-right animate__animated animate__fadeInRight">
                 <div class="space-between">
                     <h3 class="sider-title">Statistic</h3>
                     <button title="none" class="dots"><i class="bx bx-dots-vertical-rounded"></i></button>

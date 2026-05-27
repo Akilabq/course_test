@@ -10,6 +10,10 @@
 /* div{
     border: 1px solid silver;
 } */
+p {
+    transition: .3s;
+}
+
 body {
     display: grid;
     grid-template-columns: 256px 1fr;
@@ -50,7 +54,7 @@ ul {
     list-style: none;
 }
 
-.menu-list li {
+.menu-list .menu-item {
     padding: 16px;
     display: flex;
     justify-content: flex-start;
@@ -58,6 +62,12 @@ ul {
     gap: 12px;
     color: rgba(129, 129, 129, 1);
     cursor: pointer;
+}
+
+.menu-list li a {
+    display: block;
+    min-width: 224px !important;
+    min-height: 58px !important;
 }
 
 .menu-list li i {
@@ -82,7 +92,7 @@ ul {
     background-color: rgba(105, 108, 255, 0.1);
     transform: translateY(-2px);
     transition: .2s ease-out;
-    color: rgba(31, 31, 31, 1);
+    color: rgba(31, 31, 31, 1) !important;
 }
 
 .icon-active {
@@ -109,6 +119,18 @@ header {
     border: 1px solid rgba(206, 206, 206, 1);
     border-radius: 9999px;
     padding-left: 20px;
+    transition: .3s all ease;
+    outline: none;
+}
+
+.search:focus {
+    width: 841px;
+    border: 1px solid #00000096;
+    overflow: auto;
+}
+
+.search:hover {
+    box-shadow: 0px 0px 50px -10px #0000002a;
 }
 
 .header-spacer {
@@ -171,6 +193,7 @@ header {
     border-radius: 16px;
     color: #fff;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-subtitle {
@@ -201,6 +224,7 @@ header {
     color: #fff;
     border: none;
     width: 130px;
+    animation-delay: 2s;
 }
 
 .chevron-right {
@@ -211,6 +235,11 @@ header {
     color: #000;
     font-size: larger;
     padding: 2px;
+    transition: .1s ease-out;
+}
+
+.chevron-right:hover {
+    transform: rotate(90deg);
 }
 
 .graduate-cap {
@@ -231,6 +260,7 @@ header {
     width: 64px;
     height: 48px;
     opacity: 10%;
+    animation-delay: 0.3s;
 }
 
 .graduate-cap2 {
@@ -241,6 +271,7 @@ header {
     width: 52px;
     height: 40px;
     opacity: 20%;
+    animation-delay: 0.8s;
 }
 
 .graduate-cap3 {
@@ -251,6 +282,7 @@ header {
     width: 74px;
     height: 55px;
     opacity: 40%;
+    animation-delay: .5s;
 }
 
 .spacer1 {
@@ -272,6 +304,12 @@ header {
     padding: 14px;
     border-radius: 24px;
     box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.704);
+    transition: .2s ease-out;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.704);
 }
 
 .design-card {
@@ -340,6 +378,16 @@ header {
     font-size: 24px;
 }
 
+.chevron:hover {
+    background-color: #6E62E5 !important;
+    width: 40px;
+    height: 40px;
+    color: #fff !important;
+    border-radius: 9999px;
+    border: none;
+    font-size: 24px;
+}
+
 .spacer2 {
     display: flex;
     gap: 16px;
@@ -379,13 +427,28 @@ button {
     width: 248px;
     height: auto;
 }
-
+@keyframes appear {
+    from{
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.card-hovered .adimg {
+    transform: scale(1.1);
+}
 .adimg {
     width: 228px;
     height: 100px;
     border-radius: 12px;
     object-fit: cover;
     object-position: center;
+    transition: .3s ease;
 }
 
 .front-span {
@@ -582,6 +645,7 @@ progress::-webkit-progress-value {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     overflow: auto;
+
 }
 
 .uiux-span {
@@ -632,7 +696,8 @@ progress::-webkit-progress-value {
     flex-direction: row;
     gap: 4px;
 }
-.sider-card{
+
+.sider-card {
     background-color: #F0F1FF;
     display: flex;
     flex-direction: column;
@@ -641,10 +706,25 @@ progress::-webkit-progress-value {
     border-radius: 12px;
     padding: 14px;
 }
-.filter-btn{
+
+.filter-btn {
     border: none;
     background: transparent;
     text-decoration: underline;
     font-weight: 600;
     font-size: 16px;
+}
+
+.chevron {
+    transition: 300ms;
+}
+
+.chevron:hover {
+    background-color: #6E62E5;
+}
+.img-wrapper{
+    overflow: hidden;
+    border-radius: 12px;
+    width: 228px;
+    height: 100px;
 }
