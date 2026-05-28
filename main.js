@@ -117,3 +117,53 @@ adCard.forEach(element => {
 // adCard.addEventListener('mouseleave', (e) => {
 //     e.target.children[0].style.transform = 'scale(1.1)'
 // })
+const searchInput = document.getElementById('search-input');
+const phrases = [
+    "Search courses...", 
+    "Start your career here...", 
+    "Type something...",
+    "Search..."
+];
+
+let phraseIndex = 0;
+let characterIndex = 0;
+let isDeleting = false;
+let typeSpeed = 150;
+
+function type() {
+    const currentPhrase = phrases[phraseIndex];
+    
+    if (isDeleting) {
+        characterIndex--; 
+        typeSpeed = 80; 
+    } else {
+        characterIndex++;
+        typeSpeed = 150;
+    }
+
+    searchInput.placeholder = currentPhrase.slice(0, characterIndex);
+
+    
+    if (!isDeleting && characterIndex === currentPhrase.length) {
+        isDeleting = true;
+        typeSpeed = 2000; 
+    } 
+    else if (isDeleting && characterIndex === 0) {
+        isDeleting = false;
+        
+        phraseIndex++; 
+        if (phraseIndex >= phrases.length) {
+            phraseIndex = 0; 
+        }
+        
+        typeSpeed = 800;
+    }
+
+    setTimeout(type, typeSpeed);
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    setTimeout(() => {
+        type()
+    }, 3000);
+});

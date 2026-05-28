@@ -1,5 +1,6 @@
 let sider = document.querySelector('.sider')
 let menuItems = sider.querySelectorAll('li')
+const cards = document.querySelectorAll('.card');
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,4 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
             menuItem.classList.remove('menuItem-active');
         }
     });
+    setTimeout(()=>{
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.remove('invisible');
+                
+                card.classList.add('animate__animated', 'animate__fadeInUp');
+            }, index * 200);
+        });
+    }, 500)
+
 });
