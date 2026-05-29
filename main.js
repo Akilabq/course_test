@@ -165,5 +165,5 @@ function type() {
 document.addEventListener('DOMContentLoaded', ()=>{
     setTimeout(() => {
         type()
-    }, 3000);
+    }, 4000);
 });
